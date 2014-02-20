@@ -1,0 +1,10 @@
+post a file
+curl --data @gob.go -s -X POST -H 'Transfer-Encoding: chunked' -H 'token: 1234' -T - http://localhost:8080/apps/thing
+
+
+get a file
+curl --silent -H 'token: 1234' http://bob.pagodabox.com/apps/1/builds/2/file/
+
+show file (json)
+curl --silent -H 'token: 1234' http://bob.pagodabox.com/apps/1/builds/2/
+
